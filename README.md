@@ -1,4 +1,4 @@
-# Lab 05 - Stylization!
+# Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
 ## Introduction
