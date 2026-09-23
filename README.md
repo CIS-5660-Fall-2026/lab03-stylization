@@ -7,7 +7,7 @@ Let's practice adding stylization to a 3D scene using Unity's shader graph!
 <img width="948" height="604" alt="Screenshot 2026-09-23 at 3 19 20 PM" src="https://github.com/user-attachments/assets/071283b9-ec3d-47df-915c-5453b19e9cdd" />
 
 ### Puzzle 2:
-<img width="950" height="608" alt="Screenshot 2026-09-23 at 3 07 45 PM" src="https://github.com/user-attachments/assets/86cdb569-b861-4272-8429-151eb46017f5" />
+<img width="947" height="607" alt="Screenshot 2026-09-23 at 3 23 13 PM" src="https://github.com/user-attachments/assets/8e75be0c-5a04-4edb-bb1f-4a2e14521c06" />
 
 ### Puzzle 3:
 <img width="945" height="605" alt="Screenshot 2026-09-23 at 3 18 42 PM" src="https://github.com/user-attachments/assets/06e8c8c0-c08d-4db6-8f3e-6db3b28625d6" />
