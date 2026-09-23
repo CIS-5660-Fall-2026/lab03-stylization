@@ -8,11 +8,13 @@ Shader "CustomShaders/CelShader"
         // _RimCoe("Rim Coefficient", Range(0.0, 1.0)) = 1.0
 
         _SmoothFactor("Smooth Factor",  Range(0.0, 0.5)) = 0.0
-        _DiffuseThreshold("Diffuse Threshold",  Range(0.0, 1.0)) = 0.5
+        _DarkThreshold("Dark Threshold",  Range(0.0, 1.0)) = 0.5
+        _LightThreshold("Light Threshold",  Range(0.0, 1.0)) = 0.5
+        _MidtoneStrength("Midtone Strength",  Range(0.0, 1.0)) = 0.5
         _DiffuseStrength("Diffuse Strength",  Range(0.0, 1.0)) = 0.5
         _SpecularThreshold("Specular Threshold",  Range(0.0, 1.0)) = 0.5
         // _RimThreshold("Rim Threshold",  Range(0.0, 1.0)) = 0.5
-        _ShadowThreshold("Shadow Threshold",  Range(0.0, 1.0)) = 0.5
+        // _ShadowThreshold("Shadow Threshold",  Range(0.0, 1.0)) = 0.5
         _AmbientStrength("Ambient Strength",  Range(0.0, 10.0)) = 1
 
         _OutlineWidth("Outline Width",  Range(0.0, 0.02)) = 0.01
@@ -68,11 +70,13 @@ Shader "CustomShaders/CelShader"
             float _RimCoe;
 
             float _SmoothFactor;
-            float _DiffuseThreshold;
+            float _DarkThreshold;
+            float _LightThreshold;
+            float _MidtoneStrength;
             float _DiffuseStrength;
             float _SpecularThreshold;
             float _RimThreshold;
-            float _ShadowThreshold;
+            // float _ShadowThreshold;
             float _AmbientStrength;
 
             v2f vert(a2v v)
@@ -94,17 +98,14 @@ Shader "CustomShaders/CelShader"
                 Light l = GetMainLight(TransformWorldToShadowCoord(i.vertexWS.xyz));
 
                 // Calculate shadow
-                float shadow = smoothstep(_ShadowThreshold - _SmoothFactor, _ShadowThreshold + _SmoothFactor, saturate(l.shadowAttenuation));
-                // float shadow = l.shadowAttenuation;
                 float2 shadowUV = i.vertexSS.xy / i.vertexSS.w;
                 shadowUV = (shadowUV + shadowUV.yx) * _ShadowTex_ST.xy;
-                shadow = max(shadow, 1 - tex2D(_ShadowTex, shadowUV).r);
+                float shadow = max(saturate(l.shadowAttenuation), 1 - tex2D(_ShadowTex, shadowUV).r);
                 // float shadow = SHADOW_ATTENUATION(i);
 
                 // Calculate diffuse
                 float diffuse = saturate(dot(i.normalWS, l.direction));
                 diffuse *= shadow;
-                diffuse = smoothstep(_DiffuseThreshold - _SmoothFactor, _DiffuseThreshold + _SmoothFactor, diffuse);
 
                 // Get view direction
                 float3 viewDirWS = normalize(_WorldSpaceCameraPos.xyz - i.vertexWS.xyz);
@@ -112,6 +113,11 @@ Shader "CustomShaders/CelShader"
                 // Calculate specular
                 float specular = pow(saturate(dot(i.normalWS, h)), exp2(10 * _Smoothness + 1));
                 specular *= diffuse * _Smoothness;
+
+                float diffuseMaskDark = smoothstep(_DarkThreshold - _SmoothFactor, _DarkThreshold + _SmoothFactor, diffuse);
+                float diffuseMaskLight = smoothstep(_LightThreshold - _SmoothFactor, _LightThreshold + _SmoothFactor, diffuse);
+                diffuse = lerp(diffuseMaskDark * _MidtoneStrength, 1, diffuseMaskLight);
+
                 specular = smoothstep(_SpecularThreshold - _SmoothFactor, _SpecularThreshold + _SmoothFactor, specular);
 
                 // // Calculate rim light
@@ -126,7 +132,6 @@ Shader "CustomShaders/CelShader"
                 // float4 outColor = float4(l.color.rgb * (diffuse * _DiffuseStrength + max(specular, rim)) + ambient, 1);
                 float4 outColor = float4((l.color.rgb * (diffuse * _DiffuseStrength + specular) + ambient * _AmbientStrength) * _MainColor, 1);
 
-                // return float4(diffuse, 0, 0, 1);
                 return outColor;
             }
 
