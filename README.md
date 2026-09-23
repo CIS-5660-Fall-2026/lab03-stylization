@@ -1,6 +1,17 @@
 # Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
+## Luke Kwon
+
+### Puzzle 1:
+<img width="949" height="607" alt="Screenshot 2026-09-23 at 3 12 00 PM" src="https://github.com/user-attachments/assets/03467bb2-b3c8-432f-a831-a01b47a710c1" />
+
+### Puzzle 2:
+<img width="950" height="608" alt="Screenshot 2026-09-23 at 3 07 45 PM" src="https://github.com/user-attachments/assets/07ff4775-5395-4e35-a79c-6a65e2448136" />
+
+### Puzzle 3:
+<img width="951" height="610" alt="Screenshot 2026-09-23 at 3 06 11 PM" src="https://github.com/user-attachments/assets/88adfac1-aac1-4936-8f05-9b8bd607c523" />
+
 ## Introduction
 We will be stylizing a "toon" look by creating a shader in Unity that supports shadows and multiple lights in real-time! In the process, you will gain some familiarity with Unity’s shader graph.
 
