@@ -1,3 +1,17 @@
+# Nathan Chortek Submission
+
+<p align="center">
+  <img src="Images/2_tone_ball.png">
+</p>
+
+<p align="center">
+  <img src="Images/3_tone_sonic.png">
+</p>
+
+<p align="center">
+  <img src="Images/3_tone_sonic_shadowed.png">
+</p>
+
 # Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
