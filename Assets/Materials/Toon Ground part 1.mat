@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Toon Ground part 1
-  m_Shader: {fileID: -6465566751694194690, guid: c6aa7fe2d57109446a7e1f7bb3d4ad11,
+  m_Shader: {fileID: -6465566751694194690, guid: 23717f58edcba0c4e96dbac394cd2b89,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -142,6 +142,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Highlight: {r: 0.98039216, g: 0.949429, b: 0.827451, a: 0}
+    - _Midtone: {r: 0, g: 0, b: 0, a: 0}
     - _Shadow: {r: 0.46226418, g: 0.22229971, b: 0.11120505, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
