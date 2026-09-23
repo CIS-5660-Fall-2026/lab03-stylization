@@ -47,12 +47,12 @@ Material:
     - ADDITIONAL_LIGHT_CALCULATE_SHADOWS: 1
     - MAIN_LIGHT_CALCULATE_SHADOWS: 1
     - _ADDITIONAL_LIGHTS: 1
-    - _Low_threshold: 0.7
+    - _Low_threshold: 0.89
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SHADOWS_SOFT: 1
-    - _Threshold: 0.7
+    - _Threshold: 0.88
     m_Colors:
     - _Highlight: {r: 0.81886786, g: 0.8172152, b: 0.49286574, a: 1}
     - _Midtone: {r: 0.6150943, g: 0.6023282, b: 0.6023282, a: 1}
