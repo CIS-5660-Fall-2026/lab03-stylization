@@ -1,3 +1,11 @@
+# Bryan Chung - Lab 3: Stylization
+
+![](./screenshot1.png)
+![](./screenshot2.png)
+![](./screenshot3.png)
+
+---
+
 # Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
