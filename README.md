@@ -1,4 +1,4 @@
-# Bryan Chung - Lab 2: Stylization
+# Bryan Chung - Lab 3: Stylization
 
 ![](./screenshot1.png)
 ![](./screenshot2.png)
