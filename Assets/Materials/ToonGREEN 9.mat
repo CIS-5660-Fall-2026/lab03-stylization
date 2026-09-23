@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonGREEN 7
+  m_Name: ToonGREEN 9
   m_Shader: {fileID: -6465566751694194690, guid: c6aa7fe2d57109446a7e1f7bb3d4ad11,
     type: 3}
   m_Parent: {fileID: 2100000, guid: fd7a74aa18ace6042b30e1b45619b2ee, type: 2}
@@ -35,12 +35,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Threshold: 0.5
-    - _Threshold2: 0.51
+    - _Attn_Intensity: 1
+    - _Threshold: 0.09
+    - _Threshold2: 0
+    - _TileU: 8
+    - _TileV: 8
+    - _UseLineShadow: 0
     m_Colors:
     - _Highlight: {r: 1, g: 1, b: 1, a: 0}
-    - _Interim: {r: 1, g: 1, b: 1, a: 0}
-    - _Shadow: {r: 1, g: 1, b: 1, a: 0}
+    - _Interim: {r: 0.5522873, g: 0.56237984, b: 0.5943396, a: 0}
+    - _Shadow: {r: 0.56554824, g: 0.60464686, b: 0.6698113, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2309474037063073315
 MonoBehaviour:

@@ -28,12 +28,22 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _SampleTexture2D_8ac095598dda4f2eb4e65d68d10d13a4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 966f2baf5f8eaa745a5bcdc4c8127425, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Threshold: 0.849
+    - _Attn_Intensity: 1
+    - _Threshold: 0
+    - _Threshold2: 0.1
+    - _TileU: 3
+    - _TileV: 3
+    - _UseLineShadow: 1
     m_Colors:
     - _Highlight: {r: 0.7176471, g: 0.14901961, b: 0.08627451, a: 0}
+    - _Interim: {r: 0.5377358, g: 0.022828398, b: 0.022828398, a: 0}
     - _Shadow: {r: 0.4901961, g: 0.08235294, b: 0.03529412, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2309474037063073315
