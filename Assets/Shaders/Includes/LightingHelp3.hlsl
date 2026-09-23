@@ -20,18 +20,38 @@ void GetMainLight3_float(float3 WorldPos, out float3 Color, out float3 Direction
 #endif
 }
 
-void ChooseColor3_float(float3 Highlight, float3 MidTones, float3 Shadow, float Diffuse, float Threshold1, float Threshold2, out float3 OUT)
+void ChooseColor3_float(float3 Highlight, float3 MidTones, float3 Shadow, float Diffuse, float Threshold1, float Threshold2, float Smoothness, out float3 OUT)
 {   
-    if (Diffuse < Threshold1)
+    if (Smoothness <= 0.0)
     {
-        OUT = Shadow;
-    }
-    else if (Diffuse < Threshold2)
-    {
-        OUT = MidTones;
+        if (Diffuse < Threshold1)
+        {
+            OUT = Shadow;
+        }
+        else if (Diffuse < Threshold2)
+        {
+            OUT = MidTones;
+        }
+        else
+        {
+            OUT = Highlight;
+        }
     }
     else
     {
-        OUT = Highlight;
+        float shadowToMid = smoothstep(
+            Threshold1 - Smoothness,
+            Threshold1 + Smoothness,
+            Diffuse
+        );
+
+        float midToHighlight = smoothstep(
+            Threshold2 - Smoothness,
+            Threshold2 + Smoothness,
+            Diffuse
+        );
+
+        float3 color = lerp(Shadow, MidTones, shadowToMid);
+        OUT = lerp(color, Highlight, midToHighlight);
     }
 }
