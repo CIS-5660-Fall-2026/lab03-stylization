@@ -1,4 +1,32 @@
 # Lab 03 - Stylization!
+
+## My Results
+
+The toon shader is `Assets/Shaders/Toon Shader.shadergraph`, and the custom function code is in `Includes/LightingHelp.hlsl`. The shader takes the diffuse term (N·L times the shadow attenuation) and uses it to pick one of three colors. The colors and thresholds are all exposed on the material. It also adds in the additional lights, not just the main one.
+
+### Puzzle 1
+Two-tone shading on the sphere and plane in `Lab Scene 1`. I set the midtone color equal to the shadow color so only two tones show. I also changed the camera to a solid background to match the reference.
+
+![puzzle 1](Screenshots/puzzle1.png)
+
+### Puzzle 2
+Added a midtone band with adjustable shadow and highlight thresholds. Sonic has a separate material for each color. The light outline around the floor shadow comes from the soft shadow edge falling into the midtone band.
+
+![puzzle 2](Screenshots/puzzle2.png)
+
+### Puzzle 3
+Used `Shadow 1.png` as a screen-space pattern, rotated to get horizontal lines. It only shows up in cast shadows, where the shadow attenuation is below 1. `Lab Scene 3` uses material variants of the puzzle 2 materials with the pattern turned on.
+
+![puzzle 3](Screenshots/puzzle3.png)
+
+### Extra Credit
+Added a smoothness parameter that uses smoothstep to blend between bands instead of a hard cutoff. Shown here at 0.2:
+
+![smooth](Screenshots/extra_smooth.png)
+
+---
+
+## Original Instructions
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
 ## Introduction
