@@ -7,14 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Toon Mat Sonic WhiteShadow
-  m_Shader: {fileID: -6465566751694194690, guid: ff2fb5a892d192c4788eb73a0d9e79ba,
+  m_Name: Toon Mat Sonic WhiteShadow 1
+  m_Shader: {fileID: -6465566751694194690, guid: 5ef5d389596579e41877e68fdb904f2e,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
-  - MAIN_LIGHT_CALCULATE_SHADOWS
   - _ADDITIONAL_LIGHTS
   - _MAIN_LIGHT_SHADOWS_CASCADE
   - _SHADOWS_SOFT

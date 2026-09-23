@@ -7,14 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Toon Mat Sonic WhiteShadow
-  m_Shader: {fileID: -6465566751694194690, guid: ff2fb5a892d192c4788eb73a0d9e79ba,
+  m_Name: Toon Mat Sonic ShoesDeco 1
+  m_Shader: {fileID: -6465566751694194690, guid: 5ef5d389596579e41877e68fdb904f2e,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
-  - MAIN_LIGHT_CALCULATE_SHADOWS
   - _ADDITIONAL_LIGHTS
   - _MAIN_LIGHT_SHADOWS_CASCADE
   - _SHADOWS_SOFT
@@ -133,10 +132,10 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Highlight: {r: 0.99607843, g: 0.99607843, b: 0.99607843, a: 0}
+    - _Highlight: {r: 0.99607843, g: 0.85490197, b: 0.36078432, a: 0}
     - _MidColor: {r: 0.36792436, g: 0.7109336, b: 1, a: 0}
-    - _MidTones: {r: 0.99607843, g: 0.99607843, b: 0.99607843, a: 0}
-    - _Shadow: {r: 0.67058825, g: 0.7411765, b: 0.73333335, a: 0}
+    - _MidTones: {r: 0.7254902, g: 0.5529412, b: 0.07450981, a: 0}
+    - _Shadow: {r: 0.7254902, g: 0.5529412, b: 0.07450981, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1704676896558557021
