@@ -1,3 +1,15 @@
+puzzle1：
+![Result](img/1.png)
+
+puzzle2：
+![Result](img/2.png)
+
+
+puzzle3：
+
+![Result](img/3.png)
+
+
 # Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
