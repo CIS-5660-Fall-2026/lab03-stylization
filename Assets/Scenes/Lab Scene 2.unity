@@ -155,8 +155,8 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 0.8980392, b: 0.80784315, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: -0.033433102, y: 0.72074836, z: -0.034845546, w: -0.69151276}
-  m_LocalPosition: {x: 4.8398438, y: 2, z: 0}
+  m_LocalPosition: {x: 4.84, y: 2, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -449,7 +449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca1b6b177f0af4035b260203fd13dba0, type: 2}
+  - {fileID: 2100000, guid: 77f6e9b0ab1c8400d8c8cffcd3ebd16c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -593,7 +593,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d30d1d88d92a346309ed8143816efa6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 45fa282fd562f46f4bf6e634c88e05ea, type: 2}
     - target: {fileID: -5493175262189019911, guid: 221abe15e8e581b43bb1d0dc4e10c784,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -658,7 +658,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d30d1d88d92a346309ed8143816efa6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 45fa282fd562f46f4bf6e634c88e05ea, type: 2}
     - target: {fileID: 2945044530011656084, guid: 221abe15e8e581b43bb1d0dc4e10c784,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
