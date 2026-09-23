@@ -7,7 +7,7 @@ We will be stylizing a "toon" look by creating a shader in Unity that supports s
 ## What’s provided:
 This tutorial video will cover the base code, and then go over the process of making a limited version of a toon shader.
 
-Start by downloading Unity 2022.3.9f1
+Start by downloading the latest version of Unity (the version used in the tutorial below is 2022.3.9f1, so there may be some small differences).
 
 [Lab Overview and Puzzle 1 Tutorial Video](https://youtu.be/jc5MLgzJong)
          
