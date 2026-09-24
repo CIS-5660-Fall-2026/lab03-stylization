@@ -159,7 +159,7 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -439,7 +439,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
+  - {fileID: 2100000, guid: fcd37283c0e94d1b89b63df910d4802e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -562,51 +562,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8641252633879188597, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
-    - target: {fileID: -5493175262189019911, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
-    - target: {fileID: -4982485458470054150, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
-    - target: {fileID: -1705196261938046187, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
-    - target: {fileID: -534966553111944830, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
-    - target: {fileID: 744112959957790968, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
     - target: {fileID: 919132149155446097, guid: 221abe15e8e581b43bb1d0dc4e10c784,
         type: 3}
       propertyPath: m_Name
       value: Sonic Model
       objectReference: {fileID: 0}
-    - target: {fileID: 5188758170544245908, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
-    - target: {fileID: 5804768582271061324, guid: 221abe15e8e581b43bb1d0dc4e10c784,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d60db1350aa31bd4080a3bb5e2541934, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
