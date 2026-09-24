@@ -7,6 +7,9 @@
 ![Puzzle 2](puzzle2.png)
 
 
+## Puzzle 3
+
+![Puzzle 3](puzzle3.png)
 
 # Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
