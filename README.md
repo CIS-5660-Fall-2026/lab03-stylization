@@ -1,3 +1,11 @@
+# My Submission
+Part 1- <img width="497" height="511" alt="image" src="https://github.com/user-attachments/assets/c9908bac-6199-4aab-a99e-4fb9599dda9c" />
+
+Part 2- <img width="502" height="462" alt="image" src="https://github.com/user-attachments/assets/fe3ee757-6cbb-46a0-a4d7-adc7afd408f0" />
+
+Part 3- <img width="486" height="502" alt="Screenshot 2026-09-24 172952" src="https://github.com/user-attachments/assets/42c47eda-7ebb-456b-9d04-500295eef163" />
+
+
 # Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
