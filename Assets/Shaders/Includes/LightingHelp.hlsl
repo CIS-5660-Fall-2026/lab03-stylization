@@ -31,3 +31,17 @@ void ChooseColor_float(float3 Highlight, float3 Shadow, float Diffuse, float Thr
         OUT = Highlight;
     }
 }
+
+void ChooseColorWMidtone_float(float3 Highlight, float3 Shadow, float Diffuse, float HighlightThreshold, float3 Midtone, float MidtoneThreshold, out float3 OUT)
+{
+    if (Diffuse > HighlightThreshold)
+    {
+        OUT = Highlight;
+    }
+    else if (Diffuse > MidtoneThreshold) {
+        OUT = Midtone;
+    }
+    else {
+        OUT = Shadow;
+    }
+}
