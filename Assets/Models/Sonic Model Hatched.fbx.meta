@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 221abe15e8e581b43bb1d0dc4e10c784
+guid: 22c346d34a3040149426b6f87e934abb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,32 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Black
-    second: {fileID: 2100000, guid: e19bec0136c14b71a86a44bd1b058671, type: 2}
+    second: {fileID: 2100000, guid: a1962a8facc240a19fb930b6309010a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Blue
-    second: {fileID: 2100000, guid: ebf48b37906043ea808640e2cbe0b83d, type: 2}
+    second: {fileID: 2100000, guid: 25fa4d6ec838404dbc158f51192f4d3a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Gold
-    second: {fileID: 2100000, guid: 27a97190add34cb9a2864cc10a2fd313, type: 2}
+    second: {fileID: 2100000, guid: 5a92882f32a84dc8a7b17ae270e5a492, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Red
-    second: {fileID: 2100000, guid: 96c839eca7ec462087d81269ed7bc6dc, type: 2}
+    second: {fileID: 2100000, guid: f8b4c501a1eb43c390766dfd646a7571, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Skin
-    second: {fileID: 2100000, guid: c781cdd613f24d1aa13becbcfdfb7b41, type: 2}
+    second: {fileID: 2100000, guid: 4b2ede7c360b484ab3ed4621433ecfa9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: White
-    second: {fileID: 2100000, guid: 4789b98cc0cf4edd88b631b0cc5c9257, type: 2}
+    second: {fileID: 2100000, guid: d61c5ab5e4e74260988e373db1e930c5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
