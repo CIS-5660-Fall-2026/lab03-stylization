@@ -20,24 +20,23 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Default
-  m_Shader: {fileID: -6465566751694194690, guid: c6aa7fe2d57109446a7e1f7bb3d4ad11,
-    type: 3}
-  m_Parent: {fileID: -876546973899608171, guid: c6aa7fe2d57109446a7e1f7bb3d4ad11,
-    type: 3}
+  m_Name: Default 2
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Parent: {fileID: 2100000, guid: c61826eaf75ef4dcd87f97dcee3e8cb9, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
-  - MAIN_LIGHT_CALCULATE_SHADOWS
   - _ADDITIONAL_LIGHTS
   - _MAIN_LIGHT_SHADOWS_CASCADE
   - _SHADOWS_SOFT
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
+  - MAIN_LIGHT_CALCULATE_SHADOWS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -46,7 +45,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _QueueControl: 0
-    - _Threshold: 0.808
+    - _Threshold: 0.193
     m_Colors:
-    - _Highlight: {r: 0.8008297, g: 0.9150943, b: 0.6517889, a: 1}
+    - _Highlight: {r: 0.9333334, g: 0.8352942, b: 0.6313726, a: 1}
+    - _Shadow: {r: 0.5176471, g: 0.19607845, b: 0.023529414, a: 1}
   m_BuildTextureStacks: []
