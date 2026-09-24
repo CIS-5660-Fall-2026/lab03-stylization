@@ -42,3 +42,29 @@ Extra Credit:
 - Create a pull request against this repository
 - In your readme, add screenshots of your results for Puzzles 1, 2 and 3
 - Profit
+
+# Results
+
+## Puzzle 1: Two-tone toon shading
+
+![Puzzle 1](Screenshots/puzzle1.png)
+
+The graph gets the main light through the `GetMainLight` custom function, takes `saturate(dot(worldNormal, lightDir))`, multiplies by distance and shadow attenuation, and picks between a highlight and a shadow color at an adjustable threshold. The result is multiplied by the light color before going to Base Color. `Toon_Sphere` and `Toon_Plane` are two materials made from the same graph.
+
+## Puzzle 2: Three-tone toon shading
+
+![Puzzle 2](Screenshots/puzzle2.png)
+
+The color pick was moved into `ChooseColor3` in `LightingHelp.hlsl`, which takes highlight, midtone and shadow colors plus two thresholds (`ThresholdHigh`, `ThresholdLow`). Sonic uses one material per FBX material slot (`Sonic_Blue`, `Sonic_Skin`, `Sonic_Red`, `Sonic_White`, `Sonic_Black`, `Sonic_Gold`) and the plane uses `Sonic_Plane`, whose highlight matches the camera background.
+
+## Puzzle 3: Stylized shadow
+
+![Puzzle 3](Screenshots/puzzle3.png)
+
+`ShadowAttenuation` is 0 inside a received shadow and 1 outside it, so the graph samples `Shadow 1.png` with the screen position (through Tiling And Offset and Rotate) and lerps the shadow attenuation toward 1 by the sampled value times `PatternStrength`. Where the texture is white the shadow is lifted back to the lit band, where it is black the shadow stays, which leaves a screen-space hatch pattern in every shadow.
+
+## Extra credit: smoothness
+
+![Smoothness](Screenshots/smoothness.png)
+
+`ChooseColor3` uses two `smoothstep` calls centered on the thresholds, with a half-width given by the `Smoothness` slider. Smoothness 0 gives hard bands (used in the puzzle screenshots), higher values blend the bands together. The screenshot above uses 0.7 on the Sonic materials.
