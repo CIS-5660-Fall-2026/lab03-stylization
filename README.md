@@ -1,3 +1,20 @@
+**Name:** Zhiyao Luo  
+
+### Result
+![](Result/1.png)
+*Puzzle 1*
+
+![](Result/2.png)
+*Puzzle 2*
+
+![](Result/3.png)
+*Puzzle 3*
+
+![](Result/4.png)
+*Extra Credit*
+
+
+
 # Lab 03 - Stylization!
 Let's practice adding stylization to a 3D scene using Unity's shader graph!
 
